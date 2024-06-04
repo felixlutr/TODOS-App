@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
+
+
+.mainBoxBody {
+  width: 350px;
+  background-color: ;
+  border-radius: 4px;
+  margin: auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 40px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: Monospace;
+  }
+
+  
+
+.mainBoxTopic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/-1;
+  width: 350px;
+  height: 50px;
+  background-color: lightblue;
+  color: black;
+  border-radius: 4px 4px 0 0;
+  margin: auto;
+  
+}
+
+.inputTaskBox {
+  display: inline-block;
+  width: 267px;
+  height: 20px;
+  margin-left: 0;
+  box-shadow: 0 8px 6px -6px black;
+  text-align: center;
+
+}
+
+.inputTaskButton {
+  display: inline-block;
+  border: auto;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: darkgreen;
+  height: 26px;
+    
+}
+
+
+.taskCheckBoxUncomplete {
+    width: 82%;
+    padding-left: 5px;
+}
+  
+.taskCheckBoxComplete {
+    font-style: italic;
+    color: #cdcdcd;
+    text-decoration: line-through;
+    width: 82%;
+    padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+
