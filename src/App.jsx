@@ -8,6 +8,7 @@ import './styles.css'
 // []npm run dev
 // []go to chrome open http://localhost:5173
 
+// []get example from https://codesandbox.io/p/sandbox/z567lm8wp?file=%2Fsrc%2Fstyles.css%3A74%2C14
 // []done checkbox
 // [x]delete button
 // []sort by date\severity\done or not
@@ -53,7 +54,7 @@ const App = () => {
       <button className="inputTaskButton" onClick={() => generateTodo()}>Add Task</button>
       <ol>
         {todos?.map((todo) => (
-          <div key={`todo?key=${todo?.id}`}>
+          <div className="content" key={`todo?key=${todo?.id}`}>
             <input type="checkbox" onChange={event => this.props.handleChecked(event, index)} checked={todo.done} label="Done"/>
             <span>{todo?.name}</span>
             <button onClick={() => editTodo(todo.id)}>Edit</button>
