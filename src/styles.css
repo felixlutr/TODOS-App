@@ -55,23 +55,83 @@ body {
 }
 
 .content {
-  display: flex;
-  margin-left: -40px;
+  width: 100%;
+  margin-left: auto;
   margin-top: 10px;
   padding: 0;
-  background-color: rgb(0, 0, 0);
-  color: white;
-  justify-content: center;
-  
-  
+  /* background-color: rgb(0, 0, 0); */
+  border: 1px solid gray;
+  color: black;
+  max-width: 500px;
+  text-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 250ms;
+}
+
+.content > span, .content > .todo-input {
+  display: inline-block;
+  max-width: 500px;
+  word-break: break-all;
+  /* overflow-wrap: break-word; */
+  /* word-wrap: break-word; */
+  /* white-space: break-spaces;  */
+  flex: 1;
 }
 
 
+.fieldTestBox {
+  display: flex;
+  flex-direction: column;
+  margin-left: -140px;
+  margin-right: -100px;
+}
+
+.buttonDelete {
+  /* float: right; */
+}
+
+.buttonEdit {
+  /* float: right; */
+}
+
+
+/* align-items => cross-axis */
+/* justify-content => main-axis */
 
 
 
+/* .todo-checkbox:checked + span {
+  background-color: green;
+} */
 
-.taskCheckBoxUncomplete {
+
+.content:hover {
+  cursor: pointer;
+}
+
+.content:not(:has(.todo-checkbox:checked)):hover {
+  border-color: black;
+  border-width: 2px;
+}
+
+.content:has(.todo-checkbox:checked) {
+  background-color: #80ed99;
+}
+
+.content:has(.todo-checkbox:checked) > span {
+  /* background-color: blue; */
+  text-decoration: line-through;
+}
+
+/* sibling selectors */
+/* + => direct sibling */
+/* ~ => any sibling ...after... */
+
+/* .taskCheckBoxUncomplete {
     width: 82%;
     padding-left: 5px;
 }
@@ -82,7 +142,7 @@ body {
     text-decoration: line-through;
     width: 82%;
     padding-left: 5px;
-}
+} */
 
 
 
