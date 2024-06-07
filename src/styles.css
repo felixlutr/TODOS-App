@@ -5,14 +5,15 @@ body {
 
 
 .mainBoxBody {
-  width: 350px;
-  background-color: ;
-  border-radius: 4px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border: 4mm ridge rgba(0, 0, 0, 0.7);
+  /* width: 350px; */
+  border-radius: 20px;
   margin: auto;
-  margin-top: 100px;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 40px auto;
+  margin-top: 150px;
+  display: flex;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: Monospace;
   }
@@ -20,37 +21,44 @@ body {
   
 
 .mainBoxTopic {
+  border-style: solid;
   display: flex;
+  box-shadow: 0 4px 4px 0 black;
   justify-content: center;
   align-items: center;
-  grid-column: 1/-1;
   width: 350px;
   height: 50px;
-  background-color: lightblue;
+  background-color: transparent;
+  backdrop-filter: blur(100px);
   color: black;
-  border-radius: 4px 4px 0 0;
-  margin: auto;
-  
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .inputTaskBox {
-  display: inline-block;
-  width: 267px;
+  display: flex;
+  width: 347px;
   height: 20px;
   margin-left: 0;
   box-shadow: 0 8px 6px -6px black;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 
 }
 
 .inputTaskButton {
-  display: inline-block;
+  display: flex;
   border: auto;
   text-decoration: none;
   font-weight: bold;
   color: white;
   background-color: darkgreen;
   height: 26px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
     
 }
 
@@ -70,6 +78,8 @@ body {
   padding: 5px 10px;
   border-radius: 5px;
   transition: all 250ms;
+  backdrop-filter: blur(90px);
+  
 }
 
 .content > span, .content > .todo-input {
@@ -84,10 +94,10 @@ body {
 
 
 .fieldTestBox {
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  margin-left: -140px;
-  margin-right: -100px;
+
 }
 
 .buttonDelete {
@@ -143,6 +153,10 @@ body {
     width: 82%;
     padding-left: 5px;
 } */
+
+
+
+
 
 
 
