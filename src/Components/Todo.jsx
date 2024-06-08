@@ -24,7 +24,7 @@ const Todo = ({
         checked={isChecked}
         onChange={() => toggleTodoCheckedStatus(id)}
         className={"todo-checkbox"}
-        readOnly // this checkbox does nothing, the parrent control the checked state.
+        readOnly
       />
       {isEditMode ? (
         <textarea
