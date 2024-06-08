@@ -18,11 +18,13 @@ body {
   font-family: Monospace;
   }
 
-  
 
 .mainBoxTopic {
   border-style: solid;
   display: flex;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   box-shadow: 0 4px 4px 0 black;
   justify-content: center;
   align-items: center;
@@ -35,8 +37,9 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
 .inputTaskBox {
-  display: flex;
+  display: block;
   width: 347px;
   height: 20px;
   margin-left: 0;
@@ -45,39 +48,37 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-
+  margin: auto;
+  margin-bottom: 15px;
 }
 
 .inputTaskButton {
-  display: flex;
+  display: block;
   border: auto;
   text-decoration: none;
   font-weight: bold;
   color: white;
   background-color: darkgreen;
   height: 26px;
-  justify-content: center;
-  align-items: center;
   align-content: center;
-    
+  margin: auto;  
+  /* margin-left: 270px;
+  margin-top: 10px; */
 }
 
 .content {
   width: 100%;
-  margin-left: auto;
-  margin-top: 10px;
-  padding: 0;
-  /* background-color: rgb(0, 0, 0); */
-  border: 1px solid gray;
+  margin: 10px 10px 10px 10px;
+  border: 2px solid gray;
   color: black;
   max-width: 500px;
   text-wrap: wrap;
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 5px 10px;
+  gap: 15px;
+  padding: 5px;
   border-radius: 5px;
-  transition: all 250ms;
+  /* transition: all 250ms; */
   backdrop-filter: blur(90px);
   
 }
@@ -93,11 +94,16 @@ body {
 }
 
 
-.fieldTestBox {
+.contentBox {
+  border: thick double #000000;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-
+  display: inline-block;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-right: 35px;
+  
 }
 
 .buttonDelete {

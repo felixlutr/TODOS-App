@@ -90,7 +90,7 @@ const App = () => {
             Add Task
           </button>
           <ol>
-            <fieldset className="fieldTestBox">
+            <div className="contentBox">
               {todos?.map((todo) => (
                 <Todo
                   key={`todo?key=${todo?.id}`}
@@ -104,7 +104,7 @@ const App = () => {
                   }}
                 />
               ))}
-            </fieldset>
+            </div>
           </ol>
         </div>
       </div>
