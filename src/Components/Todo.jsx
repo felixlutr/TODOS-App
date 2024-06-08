@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { FaCheck, FaPencil, FaTrash } from "react-icons/fa6";
 
+
+const date = new Date().toLocaleDateString()
+
+
 const Todo = ({
   id,
   isChecked,
@@ -24,7 +28,7 @@ const Todo = ({
         checked={isChecked}
         onChange={() => toggleTodoCheckedStatus(id)}
         className={"todo-checkbox"}
-        readOnly // this checkbox does nothing, the parrent control the checked state.
+        readOnly 
       />
       {isEditMode ? (
         <textarea
@@ -38,7 +42,7 @@ const Todo = ({
           }}
         />
       ) : (
-        <span>{name}</span>
+        <span>{name}, {date}</span>
       )}
       {isEditMode ? (
         <FaCheck
