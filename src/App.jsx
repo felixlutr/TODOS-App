@@ -89,7 +89,7 @@ const App = () => {
           <button className="inputTaskButton" onClick={() => generateTodo()}>
             Add Task
           </button>
-          <ol>
+          {/* <ol> */}
             <div className="contentBox">
               {todos?.map((todo) => (
                 <Todo
@@ -105,7 +105,7 @@ const App = () => {
                 />
               ))}
             </div>
-          </ol>
+          {/* </ol> */}
         </div>
       </div>
   );
