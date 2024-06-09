@@ -1,21 +1,26 @@
 body {
     background: linear-gradient(to right, #00AAFF, #00FF6C);
+    box-sizing: border-box;
 }
 
-
+* {
+  box-sizing: inherit;
+}
 
 .mainBoxBody {
+  padding: 20px;
   align-content: center;
   align-items: center;
   justify-content: center;
   border: 4mm ridge rgba(0, 0, 0, 0.7);
-  /* width: 350px; */
+  width: fit-content;
   border-radius: 20px;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 140px;
   display: flex;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: Monospace;
+  
   }
 
 
@@ -23,33 +28,33 @@ body {
   border-style: solid;
   display: flex;
   margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   box-shadow: 0 4px 4px 0 black;
   justify-content: center;
   align-items: center;
-  width: 350px;
+  width: 90%;
   height: 50px;
   background-color: transparent;
   backdrop-filter: blur(100px);
   color: black;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
 
 
 .inputTaskBox {
   display: block;
-  width: 347px;
-  height: 20px;
-  margin-left: 0;
+  width: 90%;
+  height: 30px;
   box-shadow: 0 8px 6px -6px black;
   text-align: center;
   justify-content: center;
   align-items: center;
   align-content: center;
   margin: auto;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .inputTaskButton {
@@ -62,25 +67,26 @@ body {
   height: 26px;
   align-content: center;
   margin: auto;  
+  margin-bottom: 10px;
   /* margin-left: 270px;
   margin-top: 10px; */
 }
 
 .content {
-  width: 100%;
+  width: 90%;
   margin: 10px 10px 10px 10px;
   border: 2px solid gray;
   color: black;
   max-width: 500px;
   text-wrap: wrap;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 15px;
   padding: 5px;
   border-radius: 5px;
   /* transition: all 250ms; */
-  backdrop-filter: blur(90px);
-  
+  /* backdrop-filter: blur(90px); */
+  /* flex-direction: column; */
 }
 
 .content > span, .content > .todo-input {
@@ -97,13 +103,14 @@ body {
 .contentBox {
   border: thick double #000000;
   border-radius: 10px;
-  display: inline-block;
+  display: flex;
   width: auto;
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-right: 35px;
-  
+  flex-direction: column;
+  margin: auto;
+
 }
 
 .buttonDelete {
